@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Survey Form </title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">User Details </div>
+    <div class="content">
+      <form action=" =">
+        <div class="user-details">
+          <div>
+            <header>PHOTO</header>
+            <input type="file" id="photo" onchange="readURL(this)" accept="Image/* ">
+          </div>
+          <div class="input-box" >
+            <span class="deatils">Date of Birth</span>
+            <input type="date" id="DOB" placeholder="date" required>
+        </div>
+          <div class="input-box" >
+            <span class="deatils">Full Name</span>
+            <input type="text" id="name" placeholder="Enter your name " required>
+          </div>
+          <div class="input-box" >
+            <span class="deatils">Location</span>
+            <input type="text" id="location" placeholder="Enter your Current Location " required>
+        </div>
+        <div class="input-box" >
+          <span class="deatils">Contact No</span>
+          <input type="text" id="contact" placeholder="Enter your Contact No " required>
+      </div>
+      <div class="input-box" >
+        <span class="deatils">E-mail</span>
+        <input type="text" id="e-mail" placeholder="Enter your Email " required>
+    </div>
+  <div class="input-box" >
+    <span class="deatils">Place of Birth</span>
+    <input type="text" id="POB" placeholder="Enter your place of birth" required>
+</div>
+<div class="input-box" >
+  <span class="deatils">Partner Birth Place</span>
+  <input type="text" id="PPOB" placeholder="Enter your partner's place of birth " required>
+</div>
+<div class="input-box" >
+  <span class="deatils">Favourite Car</span>
+  <input type="text" id="car" placeholder="Enter your Favourite car " required>
+</div>
+<div class="input-box" >
+  <span class="deatils">Hobby</span>
+  <input type="text" id="hobby" placeholder="Enter your Hobby " required>
+</div>
+<div>
+  <header>RESUME</header>
+  <input type="file" id="resume">
+</div>
+</div>
+
+<div class="gender-details">
+  <input type="radio" name="gender" id="dot-1">
+  <input type="radio" name="gender" id="dot-2">
+  <input type="radio" name="gender" id="dot-3">
+  <span class="gender-title">Gender</span>
+  <div class="category">
+    <label for="dot-1">
+      <span class="dot one"></span>
+      <span class="gender">Male</span>
+    </label>
+    <label for="dot-2">
+      <span class="dot two"></span>
+      <span class="gender">Female</span>
+    </label>
+    <label for="dot-3">
+      <span class="dot three"></span>
+      <span class="gender">Others</span>
+    </label>
+  </div>
+</div>
+  
+<div class="button">
+  <input type="submit" value="Generate" onclick="myFunction()">
+  <script>
+    function myFunction() {
+      alert("Thanks for taking the survey!")
+      document.getElementById('photo').value='';
+      document.getElementById('name').value='';
+      document.getElementById('location').value='';
+      document.getElementById('contact').value='';
+      document.getElementById('e-mail').value='';
+      document.getElementById('DOB').value='';
+      document.getElementById('POB').value='';
+      document.getElementById('PPOB').value='';
+      document.getElementById('car').value='';
+      document.getElementById('hobby').value='';
+      document.getElementById('resume').value='';
+      document.getElementById('dot-1').value='';
+      document.getElementById('dot-2').value='';
+      document.getElementById('dot-3').value='';
+
+    }
+  </script>
+</div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
